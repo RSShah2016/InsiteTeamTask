@@ -1,0 +1,8 @@
+<div>
+    <label>Colour</label>
+    <div>
+        <select [(ngModel)]="Game">
+            <option *ngFor="let x of game" [value]="x.id" [selected]="Game.id == x.id">{{x.id}}</option>
+        </select>
+    </div>
+</div>
